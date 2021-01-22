@@ -1,0 +1,33 @@
+{
+  "symbols": [
+    {
+      "proName": "FOREXCOM:SPXUSD",
+      "title": "S&P 500"
+    },
+    {
+      "proName": "FOREXCOM:NSXUSD",
+      "title": "Nasdaq 100"
+    },
+    {
+      "proName": "TSX:TSX",
+      "title": "S&P/TSX Composite"
+    },
+    {
+      "description": "BTC",
+      "proName": "CAPITALCOM:BTCCAD"
+    },
+    {
+      "description": "ETH",
+      "proName": "CAPITALCOM:ETHCAD"
+    },
+    {
+      "description": "USD/CAD",
+      "proName": "FX:USDCAD"
+    }
+  ],
+  "showSymbolLogo": true,
+  "colorTheme": "light",
+  "isTransparent": true,
+  "displayMode": "regular",
+  "locale": "en"
+}

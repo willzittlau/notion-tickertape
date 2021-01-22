@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notion Stock Widget</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="light">
+    <!-- Light/Dark Btn -->
+    <div class="settings">
+      <div class="modes">
+        <button class="light">Light</button>
+        <button class="dark">Dark</button>
+      </div>
+    </div>
+    <!-- TradingView Light Widget BEGIN -->
+    <div class="tradingview-widget-container" id="light">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright">
+        <a href="https://www.tradingview.com" rel="noopener" target="_blank"
+          ><span class="blue-text">Ticker Tape</span></a
+        >
+        by TradingView
+      </div>
+      <script
+        type="text/javascript"
+        src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+        async
+      >
+        {
+          "symbols": [
+            {
+              "proName": "FOREXCOM:SPXUSD",
+              "title": "S&P 500"
+            },
+            {
+              "proName": "FOREXCOM:NSXUSD",
+              "title": "Nasdaq 100"
+            },
+            {
+              "proName": "TSX:TSX",
+              "title": "S&P/TSX Composite"
+            },
+            {
+              "description": "BTC",
+              "proName": "CAPITALCOM:BTCCAD"
+            },
+            {
+              "description": "ETH",
+              "proName": "CAPITALCOM:ETHCAD"
+            },
+            {
+              "description": "USD/CAD",
+              "proName": "FX:USDCAD"
+            }
+          ],
+          "showSymbolLogo": true,
+          "colorTheme": "light",
+          "isTransparent": true,
+          "displayMode": "regular",
+          "locale": "en"
+        }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+    <!-- TradingView Dark Widget BEGIN -->
+    <div class="tradingview-widget-container" id="dark">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright">
+        <a href="https://www.tradingview.com" rel="noopener" target="_blank"
+          ><span class="blue-text">Ticker Tape</span></a
+        >
+        by TradingView
+      </div>
+      <script
+        type="text/javascript"
+        src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+        async
+      >
+        {
+          "symbols": [
+            {
+              "proName": "FOREXCOM:SPXUSD",
+              "title": "S&P 500"
+            },
+            {
+              "proName": "FOREXCOM:NSXUSD",
+              "title": "Nasdaq 100"
+            },
+            {
+              "proName": "TSX:TSX",
+              "title": "S&P/TSX Composite"
+            },
+            {
+              "description": "BTC",
+              "proName": "CAPITALCOM:BTCCAD"
+            },
+            {
+              "description": "ETH",
+              "proName": "CAPITALCOM:ETHCAD"
+            },
+            {
+              "description": "USD/CAD",
+              "proName": "FX:USDCAD"
+            }
+          ],
+          "showSymbolLogo": true,
+          "colorTheme": "dark",
+          "isTransparent": true,
+          "displayMode": "regular",
+          "locale": "en"
+        }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+    <script src="app.js"></script>
+  </body>
+</html>
